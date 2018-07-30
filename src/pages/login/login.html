@@ -1,0 +1,33 @@
+<ion-content padding>
+  <img  width="150px" height="150px" src="../../assets/imgs/NewLogo.png" style="align-items: center;display: block;margin-left: auto;margin-right: auto;">  
+   <ion-list>
+
+       <ion-item>
+         <ion-label floating>Email</ion-label>
+         <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+       </ion-item>
+     
+       <ion-item>
+         <ion-label floating>Password</ion-label>
+         <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+       </ion-item>
+   
+     
+     <div padding>
+         <button ion-button full color="Light" (click)="signIn(user)">SIGN IN</button>
+     </div>
+     
+     <table width="100%">
+         <tr>
+           <td><hr /></td>
+           <td style="width:1px; "> <b>OR</b> </td>
+           <td><hr /></td>
+         </tr>
+       </table>
+       
+       <div padding>
+           
+         <button ion-button clear full style="border: 1px solid lightblue" (click)="goRegisterPage()">SIGN UP</button>
+       </div>
+     </ion-list>
+</ion-content>
